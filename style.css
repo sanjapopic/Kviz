@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+    margin: 0;    
+    background-image: radial-gradient(rgb(144, 144, 144), rgb(116, 116, 116), rgb(103, 103, 103));
+    font-style: italic;
+    color: rgb(168, 226, 255);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 600px;
+}
+
+.container span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+}
+
+span img {
+    width: 69px;
+    height: 69px;
+}
+
+.container h1 {
+    font-size: 50px;
+}
+
+.container h2 {
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.kategorija-start {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.kategorija-start #kategorija {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px   rgb(10, 0, 59);
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+} 
+
+option {
+    background-color: rgb(255, 255, 255);
+}
+
+.kategorija-start button {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px  rgb(10, 0, 59);
+    border: none;
+    background-color:  rgb(168, 226, 255);
+    cursor: pointer;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.kategorija-start button:hover {
+    background-color: rgb(109, 206, 255);
+}
+
+
+
+
+.button-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+}
+
+.button-container button {
+    padding: 10px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:  rgb(23, 178, 255);
+    margin: auto;
+    box-shadow: 2px 2px  rgb(10, 0, 59);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.button-container button:hover {
+    background-color: rgb(109, 206, 255);
+}
+
+#pitanje {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.kviz {
+    width: 800px;
+    height: 300px;
+}
+
+
+
+#rezultat {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.kviz button {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px  rgb(10, 0, 59);
+    border: none;
+    background-color:  rgb(137, 216, 255);
+    cursor: pointer;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: auto;
+}
+
+.kviz button:hover {
+    background-color: rgb(109, 206, 255);
+}
+
+/* Stilovi za mobilne uređaje */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .container h1 {
+        font-size: 30px; 
+    }
+
+    .container h2 {
+        font-size: 18px; 
+    }
+
+    span img {
+        width: 40px;
+        height: 40px;
+    }
+    
+
+    .kategorija-start {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    #kategorija {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .kviz {
+        width: 100%; 
+    }
+
+    #pitanje {
+        font-size: 20px;
+    }
+
+    .button-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .button-container button {
+        width: 100%; 
+    }
+
+    #rezultat {
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .container {
+        width: 90%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .container h1 {
+        font-size: 40px; 
+    }
+
+    .container h2 {
+        font-size: 20px; 
+    }
+
+    span img {
+        width: 55px;
+        height: 55px;
+    }
+    
+
+    .kategorija-start {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    #kategorija {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .kviz {
+        width: 100%; 
+    }
+
+    #pitanje {
+        font-size: 20px; 
+    }
+
+    .button-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .button-container button {
+        width: 100%; 
+    }
+
+    #rezultat {
+        font-size: 18px; 
+    }
+}

@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kviz</title>
+</head>
+<body>
+
+    <div class="container">
+        <span><h1>Kviz</h1><img src="assets/slike/kviz.png" alt=""></span>
+        <h2>Odaberite kategoriju!</h2>
+            <div class="kategorija-start">
+                <select id="kategorija">
+                <option value="sport">Sport</option>
+                <option value="istorija">Istorija</option>
+                <option value="geografija">Geografija</option>
+                <option value="knjizevnost">Književnost</option>
+                </select>
+                <button id="start">ZAPOČNI KVIZ</button>
+            </div>
+   
+
+
+
+        <div class="kviz" id="kviz" style="display:none;">
+            <div id="pitanje"></div>
+                <div class="button-container">
+                    <button id="odgovor1"></button>
+                    <button id="odgovor2"></button>
+                    <button id="odgovor3"></button>
+                    <button id="odgovor4"></button>
+                </div>
+                    <div id="rezultat" style="display: none;"></div>
+                    <button id="restart" style="display: none;">PONOVO POKRENI KVIZ</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
